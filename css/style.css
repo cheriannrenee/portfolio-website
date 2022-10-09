@@ -10,7 +10,7 @@ body {
   font-size: 16px; /* Sets the font size to 16px */
   font-weight: 300; /* Sets the font weight to 300 */
   line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
-  color: #4a4a4a;
+  color: #101010;
 }
 
 h1, h2, h3, h4 {
@@ -40,21 +40,21 @@ img {
 }
 
 a {
-  color: #ff7f50;
+  color: #3734DB;
   text-decoration: none; /* No underlining */
 }
 
 a:visited { /* visited link */
-  color: #ff7f50;
+  color: #3734DB;
 }
 
 a:hover {
-  color: #cc6540;
+  color: #101010;
   text-decoration: underline; /* Underlining when hovering over a link */
 }
 
 a:active { /* selected link */
-  color: #994c30;
+  color: #808080;
 }
 
 .button {
@@ -74,10 +74,10 @@ a:active { /* selected link */
 }
 
 .button.contact {
-  background-color: transparent;
-  color: #808080;
-  text-transform: uppercase;
-  border: 2px solid #808080;
+  background-color: #3734DB;
+  color: #ffffff;
+  text-transform: none;
+  border: 0px solid #808080;
 }
 
 .button.contact:hover {
