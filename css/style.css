@@ -4,35 +4,66 @@ Primary Color (Black): #101010;
 Secondary Color (Blue): 3734DB;
 */
 
+.logo {
+  max-width: 100px;
+}
+
+
+header {
+  background-color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #ffffff;
-  font-family: 'Futura', sans-serif;
-  font-size: 14px;
-  font-weight: 100;
+  font-family: 'Proxima Nova', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
   line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
   color: #101010;
+}
+
+selector {
+  position: fixed;
+}
+
+.container {
+  padding: 0 35px;
+}
+
+#work .row { padding-bottom: 25px; border-bottom: 3px solid #101010; }
+
+.row {
+  margin: 35px 0; /* 25px top and bottom, 0 left and right */
 }
 
 h1, h2, h3, h4 {
   line-height: 1.4;
 }
 h1 {
-  font-size: 1.75em;
+  font-size: 2.15em;
   font-weight: 700;
 }
 
 h2 {
-  font-size: 1.50em;
+  font-size: 1.75em;
   font-weight: 700;
 }
 
 h3 {
-  font-size: 0.90em;
-  font-weight: 100;
+  font-size: 1.25em;
+  font-weight: 500;
+  text-align: center;
 }
 h4 {
   font-size: 0.15em;
-  font-weight: 100;
+  font-weight: 500;
 }
 
 img {
@@ -61,10 +92,9 @@ a:active { /* selected link */
   display: inline-block;
   background-color: #3734DB;
   color: #ffffff;
-  font-weight: 400;
-  padding: 10px;
-  border-radius: 3px;
-  border-bottom: 2px solid #3734DB;
+  font-weight: 500;
+  padding:7px 20px;
+  border-radius: 10px;
   transition: 0.2s opacity;
 }
 
@@ -89,4 +119,40 @@ a:active { /* selected link */
 .button.contact:hover {
   background-color: #ffffff;
   color: #101010;
+}
+
+main {
+  padding-top: 50px;
+}
+
+#hero {
+  background-color: #DCDCDC;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+#hero h1 {
+  text-align: center; /* Centers text */
+  background-color: #DCDCDC;
+  margin: 0;
+  padding: 0.67em 0;
+}
+
+.center {
+  text-align: center;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul > li > a {
+  padding: 0 15px;
+  font-weight: 500;
 }
