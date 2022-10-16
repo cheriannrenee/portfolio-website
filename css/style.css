@@ -74,6 +74,8 @@ h4 {
 
 img {
   width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 a {
@@ -96,13 +98,16 @@ a:active { /* selected link */
 
 .button {
   display: inline-block;
-  background-color: #3734DB;
-  color: #ffffff;
+  background-color: #ff7f50;
+  color: white;
   font-weight: 500;
-  padding:7px 20px;
+  text-decoration: none;
+  padding: 10px;
   border-radius: 10px;
   transition: 0.2s opacity;
+
 }
+
 
 .button:visited {
   display: inline-block;
@@ -111,8 +116,7 @@ a:active { /* selected link */
 }
 
 .button:hover {
-  background-color: #ffffff;
-  color: #101010;
+  opacity: 0.8;
 }
 
 .button.contact {
@@ -173,6 +177,18 @@ nav > ul > li > a {
   margin-right: auto;
 }
 
+@keyframes airplane-move {
+  from {transform: translate(0,0);}
+  to {transform: translate(350px,-45px);}
+}
+
+.airplane {
+  animation-duration: 7s;
+  animation-name: airplane-move;
+  animation-iteration-count: infinite;
+  animation-direction: linear;
+  animation-timing-function: linear;
+}
 
 /* ==============================Medium devices (640px and larger)================================= */
 @media only screen and (min-width: 640px) {
