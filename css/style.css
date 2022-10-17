@@ -8,22 +8,6 @@ Secondary Color (Blue): 3734DB;
   max-width: 100px;
 }
 
-.icon {
-  max-width: 25px;
-}
-
-
-header {
-  background-color: #ffffff;
-  text-transform: uppercase;
-  text-align: center;
-  position: relative;
-}
-
-* {
-  box-sizing: border-box;
-}
-
 body {
   background-color: #ffffff;
   font-family: 'Proxima Nova', sans-serif;
@@ -31,26 +15,6 @@ body {
   font-weight: 500;
   line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
   color: #101010;
-}
-
-selector {
-  position: fixed;
-}
-
-.container {
-  padding: 0 35px;
-}
-
-#work .row { padding-bottom: 25px; border-bottom: 3px solid #101010; }
-
-.row {
-  margin: 35px 0; /* 25px top and bottom, 0 left and right */
-}
-
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
 }
 
 h1, h2, h3, h4 {
@@ -112,7 +76,6 @@ a:active { /* selected link */
 
 }
 
-
 .button:visited {
   display: inline-block;
   background-color: #3734DB;
@@ -133,6 +96,44 @@ a:active { /* selected link */
 .button.contact:hover {
   background-color: #ffffff;
   color: #101010;
+}
+
+.icon {
+  max-width: 25px;
+}
+
+/* ==============================End Section================================= */
+/* ==============================Start Section================================= */
+
+header {
+  background-color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+selector {
+  position: fixed;
+}
+
+.container {
+  padding: 0 35px;
+}
+
+#work .row { padding-bottom: 25px; border-bottom: 3px solid #101010; }
+
+.row {
+  margin: 35px 0; /* 25px top and bottom, 0 left and right */
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 main {
@@ -181,6 +182,15 @@ nav > ul > li > a {
   margin-right: auto;
 }
 
+/* ==============================End Section================================= */
+/* ==============================Start Section================================= */
+/*SVG animation*/
+/.svg-animation {
+  width: 100%;
+  max-width: 100%
+  height: auto;
+}
+
 @keyframes airplane-move {
   from {transform: translate(0,0);}
   to {transform: translate(350px,-45px);}
@@ -193,6 +203,10 @@ nav > ul > li > a {
   animation-direction: linear;
   animation-timing-function: linear;
 }
+
+/* ==============================End Section================================= */
+/* ==============================Start Section================================= */
+/*Media Queries*/
 
 /* ==============================Medium devices (640px and larger)================================= */
 @media only screen and (min-width: 640px) {
