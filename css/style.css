@@ -8,6 +8,10 @@ Secondary Color (Blue): 3734DB;
   max-width: 100px;
 }
 
+.icon {
+  max-width: 25px;
+}
+
 
 header {
   background-color: #ffffff;
