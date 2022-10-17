@@ -141,7 +141,6 @@ main {
 }
 
 #hero {
-  background-color: #DCDCDC;
   padding: 20px 0;
   display: inline-block;
   width: 100%;
@@ -149,7 +148,6 @@ main {
 
 #hero h1 {
   text-align: center; /* Centers text */
-  background-color: #DCDCDC;
   margin: 0;
   padding: 0.67em 0;
 }
@@ -236,4 +234,23 @@ nav > ul > li > a {
 
 /* ==============================X-large devices (1440px or larger)================================= */
 @media only screen and (min-width: 1440px) {
+}
+
+/* =============================Gradient background================================= */
+#hero {
+	background: linear-gradient(-45deg, #87CEEB, #EAD6EE);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
