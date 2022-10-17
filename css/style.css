@@ -238,9 +238,9 @@ nav > ul > li > a {
 
 /* =============================Gradient background================================= */
 #hero {
-	background: linear-gradient(-45deg, #87CEEB, #EAD6EE);
+	background: linear-gradient(-45deg, #325CFA61, #528DFF52, #007EFF61);
 	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
+	animation: gradient 10s ease infinite;
 }
 
 @keyframes gradient {
