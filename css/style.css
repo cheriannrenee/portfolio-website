@@ -192,12 +192,12 @@ nav > ul > li > a {
 }
 
 @keyframes airplane-move {
-  from {transform: translate(0,0);}
-  to {transform: translate(350px,-45px);}
+  from {transform: translate(0,70);}
+  to {transform: translate(350px,-100px);}
 }
 
 .airplane {
-  animation-duration: 7s;
+  animation-duration: 6s;
   animation-name: airplane-move;
   animation-iteration-count: infinite;
   animation-direction: linear;
