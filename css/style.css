@@ -4,8 +4,8 @@ Primary Color (Black): #101010;
 Secondary Color (Blue): 3734DB;
 */
 
-.logo {
-  max-width: 100px;
+* {
+  box-sizing: border-box;
 }
 
 body {
@@ -20,6 +20,7 @@ body {
 h1, h2, h3, h4 {
   line-height: 1.4;
 }
+
 h1 {
   font-size: 2.15em;
   font-weight: 700;
@@ -112,8 +113,8 @@ header {
   position: relative;
 }
 
-* {
-  box-sizing: border-box;
+header .logo {
+  max-width: 100px;
 }
 
 selector {
