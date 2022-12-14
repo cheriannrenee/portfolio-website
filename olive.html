@@ -1,33 +1,42 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Cheri-ann Renee">
+    <meta name="description" content="Sample meta description - index page.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-<link rel="stylesheet" type="text/css" href="css/style.css">
-    <meta  charset="utf-8">
-    <title>CHERI-ANN RENEE</title>
     <link href="img/logo-letters.png" rel="shortcut icon">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://kit.fontawesome.com/bfd2d3da4e.js" crossorigin="anonymous"></script>
+    <title>Cheri-ann Renee</title>
   </head>
-
-  <body>
-    <!--Header section-->
-    <header>
-      <!--Logo-->
-			<div class="logo">
-				<div class="logo-cont">
-					<a href="index.html"><img src="img/logo-letters.png" alt="logo" class="logo"></a>
-				</div>
-			</div>
-
-      <!--Nav-->
-        <nav>
-          <ul>
-            <li><a href="index.html"> Work</a></li>
-            <li><a href="about.html"> About</a></li>
-            <li><a href="#contact"> Contact</a></li>
-          </ul>
-        </nav>
-    </header>
+  <body id="index-page">
+    <!-- For the header -->
+	<header>
+		<!-- For the navigation -->
+		<div class="container">
+            <div class="navtoggle" id="myNavtoggle">
+                <a href="index.html">
+                 <img src="img/logo-letters.png" class="logo" alt="Logo" >
+                </a>
+                <nav>
+                  <ul class="navigation">
+                    <li class="active"><a href="index.html">Work</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#contact" onclick="menuToggle(this)">Contact</a></li>
+                    <li>
+                        <p id="click_advance">
+                            <a href="javascript:void(0);" class="icon" onclick="menuToggle()">
+                            <i class="fas fa-bars"></i>
+                            </a>
+                        </p>
+                    </li>
+                  </ul>
+                </nav>
+            </div>
+		</div>
+	</header>
 
 <!--Work preview-->
 <div class="container"><div class="row"><h1>Olive App</h1></div></div>
@@ -168,29 +177,26 @@ More than ever today, we live in a digital world where everything is connected a
         alt="olive_last image">
     </picture>
 
-    <!--Footer-BLACK-->
-    <footer id="contact">
-  <div class="container">
-    <h2>Let's connect!</h2>
+    <!-- For the footer  -->
+    	<footer id="contact">
+    		<div class="container">
+              <h2>Let's connect!</h2>
 
-      <a href="https://www.linkedin.com/in/cheriannrenee/"
-        target="_blank"><img src="img/linkedin-icon.png" alt="LinkedIn" class="icon"></a>
+                <a href="https://www.linkedin.com/in/cheriannrenee/"
+                  target="_blank"><img src="img/linkedin-icon.png" alt="LinkedIn" class="icon"></a>
 
-        <a href="https://www.instagram.com/cheriannrenee/"
-        target="_blank"><img src="img/instagram-icon.png" alt="Instagram" class="icon"></a>
+                  <a href="https://www.instagram.com/cheriannrenee/"
+                  target="_blank"><img src="img/instagram-icon.png" alt="Instagram" class="icon"></a>
 
-        <a href="https://outlook.office365.com/mail/deeplink/compose/?mailtouri=mailto%3acheriannrenee%40gmail.com"
-        target="_blank"><img src="img/mail-icon.png" alt="E-mail" class="icon"></a>
+                  <a href="https://outlook.office365.com/mail/deeplink/compose/?mailtouri=mailto%3acheriannrenee%40gmail.com"
+                  target="_blank"><img src="img/mail-icon.png" alt="E-mail" class="icon"></a>
 
-        <p><div class="airplane"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" data-name="Layer 3"><polygon fill="none" stroke="#101010" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" points="13.42 20.48 18.67 24.33 28.21 7.93 3.79 13.53 9.68 17.8 9.68 23.77 13.42 20.48"/><line x1="9.53" x2="27.75" y1="17.87" y2="8.38" fill="none" stroke="#101010" stroke-linecap="round" stroke-linejoin="round"/><line x1="12.22" x2="27.75" y1="19.39" y2="8.38" fill="none" stroke="#101010" stroke-linecap="round" stroke-linejoin="round"/><polygon fill="#101010" points="14.05 19.7 9.59 23.92 10.21 16.95 14.05 19.7"/></svg></div>
+                  <div class="airplane"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" data-name="Layer 3"><polygon fill="none" stroke="#101010" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" points="13.42 20.48 18.67 24.33 28.21 7.93 3.79 13.53 9.68 17.8 9.68 23.77 13.42 20.48"/><line x1="9.53" x2="27.75" y1="17.87" y2="8.38" fill="none" stroke="#101010" stroke-linecap="round" stroke-linejoin="round"/><line x1="12.22" x2="27.75" y1="19.39" y2="8.38" fill="none" stroke="#101010" stroke-linecap="round" stroke-linejoin="round"/><polygon fill="#101010" points="14.05 19.7 9.59 23.92 10.21 16.95 14.05 19.7"/></svg></div>
 
-          <p>© 2022 CHERI-ANN RENEE. All rights reserved.</p>
-
-          </div>
-        </footer>
-
-<script src="https://code.jquery.com/jquery-3.6.1.min" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-<script src="js/scripts.js"></script>
-
+                  <p>© 2022 CHERI-ANN RENEE. All rights reserved.</p>
+              </div>
+    	</footer>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="js/scripts.js"></script>
       </body>
     </html>
