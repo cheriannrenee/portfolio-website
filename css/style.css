@@ -360,7 +360,7 @@ Large devices (1024px or larger)
 
 /* =============================Gradient background================================= */
 #hero {
-	background: linear-gradient(-45deg, #325CFA61, #528DFF52, #007EFF61);
+	background: linear-gradient(-45deg, #325CFA61, #528DFF52, #6752ff52);
 	background-size: 400% 400%;
 	animation: gradient 10s ease infinite;
 }
