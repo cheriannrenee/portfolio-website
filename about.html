@@ -1,110 +1,117 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Cheri-ann Renee">
+    <meta name="description" content="Sample meta description - index page.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-<link rel="stylesheet" type="text/css" href="css/style.css">
-    <meta  charset="utf-8">
-    <title>ABOUT CHERI-ANN RENEE</title>
     <link href="img/logo-letters.png" rel="shortcut icon">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://kit.fontawesome.com/bfd2d3da4e.js" crossorigin="anonymous"></script>
+    <title>Cheri-ann Renee</title>
   </head>
-
-  <body>
-    <!--Header section-->
-    <header>
-      <!--Logo-->
-			<div class="logo">
-				<div class="logo-cont">
-					<a href="index.html"><img src="img/logo-letters.png" alt="logo" class="logo"></a>
-				</div>
-			</div>
-
-      <!--Nav-->
-        <nav>
-          <ul>
-            <li><a href="index.html"> Work</a></li>
-            <li><a href="about.html"> About</a></li>
-            <li><a href="#contact"> Contact</a></li>
-          </ul>
-        </nav>
-    </header>
-
-<div class="container">
-    <!--This is the Hero section-->
-      <main>
-          <div class="row">
-          <div class="container"><h1>Hey, I’m Renee!</h1>
-            <!-- Profile image -->
-            <img src="img/about/about.png" alt="RENEE FIGUEROA">
-            <!-- Profile image end-->
-                <p>My background in Public Policy allows me to grasp a deeper understanding of issues at the core, see how people are impacted at the personal level, and challenges me to be the bridge of communication with like-minded humans.</p>
-                <p>Right now I’m a Graphic Designer for <a href="https://levoit.com/">Levoit</a>, working on the product development team – creating graphics as user-solutions for packaging and the web, and in my free time I have the privilege of mentoring college students & helping them navigate through life.</p>
-                <p>To grow in my career, I enrolled in CareerFoundry’s UX Design program, learning about the design thinking process from start to finish, and am anticipating to graduate by the end of this year. In the duration of the program, I gained more skills pertaining to frontend development, including HTML, CSS, and JavaScript.</p>
-                <p>Some of my favorite things? (1) Anything caprese, (2) the pleasant surprise of heavenly sun rays beaming through a sky full of pllllump white clouds, and of course, (3) a good cup of coffee to kickstart the day. Black, that is.</p>
+  <body id="index-page">
+    <!-- For the header -->
+	<header>
+		<!-- For the navigation -->
+		<div class="container">
+            <div class="navtoggle" id="myNavtoggle">
+                <a href="index.html">
+                 <img src="img/logo-letters.png" class="logo" alt="Logo" >
+                </a>
+                <nav>
+                  <ul class="navigation">
+                    <li><a href="index.html">Work</a></li>
+                    <li class="active"><a href="about.html">About</a></li>
+                    <li><a href="#contact" onclick="menuToggle(this)">Contact</a></li>
+                    <li>
+                        <p id="click_advance">
+                            <a href="javascript:void(0);" class="icon" onclick="menuToggle()">
+                            <i class="fas fa-bars"></i>
+                            </a>
+                        </p>
+                    </li>
+                  </ul>
+                </nav>
             </div>
+		</div>
+	</header>
+
+    <main>
+        <div class="container">
+            <div><!--For the image, My Story and Skills and tools sections-->
+                <div>
+                    <picture><!--For students, the images below should be updated with real images-->
+                      <source srcset="img/about/about.png">
+                      <img src="img/about/about.png" alt="RENEE FIGUEROA">
+                    </picture>
+                    <div><!--For My Story and Skills and tools sections-->
+                        <div class="column col-lg-7"><!--Column one-->
+                            <h1>Hey, I’m Renee!</h1>
+                            <p>My background in Public Policy allows me to grasp a deeper understanding of issues at the core, see how people are impacted at the personal level, and challenges me to be the bridge of communication with like-minded humans.</p>
+                            <p>Right now I’m a Graphic Designer for <a href="https://levoit.com/" target="_blank">Levoit</a>, working on the product development team – creating graphics as user-solutions for packaging and the web, and in my free time I have the privilege of mentoring college students &amp; helping them navigate through life.</p>
+                            <p>To grow in my career, I enrolled in CareerFoundry’s UX Design program, learning about the design thinking process from start to finish, and am anticipating to graduate by the end of this year. In the duration of the program, I gained more skills pertaining to frontend development, including HTML, CSS, and JavaScript.</p>
+                            <p>Some of my favorite things? (1) Anything caprese, (2) the pleasant surprise of heavenly sun rays beaming through a sky full of pllllump white clouds, and of course, (3) a good cup of coffee to kickstart the day. Black, that is.</p>
+                            <a href="https://drive.google.com/file/d/1st5Hg-0UxboCAqd19flk32hnmqeUya_2/view" class="button" target="_blank">Here's my resume</a>
+                        </div>
+                        <div class="column col-lg-8"><!--Column two-->
+                            <h2>Skills &amp; Technology</h2>
+                            <div class="column col-md-6"><!--Column two, row one-->
+                                <h3>Skills</h3>
+                                <ul>
+                                    <li>User Testing</li>
+                                    <li>UI Design</li>
+                                    <li>User Research</li>
+                                    <li>Wireframing</li>
+                                    <li>Prototyping</li>
+                                    <li>Information Architecture</li>
+                                    <li>Interaction Design</li>
+                                    <li>Design Thinking</li>
+                                </ul>
+                            </div>
+                            <div class="column col-md-6"><!--Column two, row two-->
+                                <h3>Technology</h3>
+                                <ul>
+                                    <li>Figma</li>
+                                    <li>Sketch</li>
+                                    <li>Adobe XD</li>
+                                    <li>Photoshop</li>
+                                    <li>Illustrator</li>
+                                    <li>HTML/CSS</li>
+                                    <li>Javascript</li>
+                                    <li>InVision</li>
+                                    <li>Marvel</li>
+                                    <li>Principle</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+<!-- For the footer  -->
+	<footer id="contact" style="clear: both;">
+		<div class="container">
+          <h2>Let's connect!</h2>
+
+            <a href="https://www.linkedin.com/in/cheriannrenee/"
+              target="_blank"><img src="img/linkedin-icon.png" alt="LinkedIn" class="icon"></a>
+
+              <a href="https://www.instagram.com/cheriannrenee/"
+              target="_blank"><img src="img/instagram-icon.png" alt="Instagram" class="icon"></a>
+
+              <a href="https://outlook.office365.com/mail/deeplink/compose/?mailtouri=mailto%3acheriannrenee%40gmail.com"
+              target="_blank"><img src="img/mail-icon.png" alt="E-mail" class="icon"></a>
+
+              <div class="airplane"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" data-name="Layer 3"><polygon fill="none" stroke="#101010" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" points="13.42 20.48 18.67 24.33 28.21 7.93 3.79 13.53 9.68 17.8 9.68 23.77 13.42 20.48"/><line x1="9.53" x2="27.75" y1="17.87" y2="8.38" fill="none" stroke="#101010" stroke-linecap="round" stroke-linejoin="round"/><line x1="12.22" x2="27.75" y1="19.39" y2="8.38" fill="none" stroke="#101010" stroke-linecap="round" stroke-linejoin="round"/><polygon fill="#101010" points="14.05 19.7 9.59 23.92 10.21 16.95 14.05 19.7"/></svg></div>
+
+              <p>© 2022 CHERI-ANN RENEE. All rights reserved.</p>
           </div>
-      </main>
-
-<a href="https://drive.google.com/file/d/1st5Hg-0UxboCAqd19flk32hnmqeUya_2/view" target="_blank" class="button">Here's my resume</a>
-
-<h2>Skills & Technology</h2>
-
-<!--Columns-->
-  <div class="col-md-6">
-
-        Skills
-        <ul><li>User Testing</li>
-          <li>UI Design</li>
-          <li>User Research</li>
-          <li>Wireframing</li>
-          <li>Prototyping</li>
-          <li>Information Architecture</li>
-          <li>Interaction Design</li>
-          <li>Design Thinking</li>
-        </ul>
-
-      </div>
-
-        <!-- COLUMNS -->
-          <div class="col-md-6">
-
-        Technology
-        <ul><li>Figma</li>
-          <li>Sketch</li>
-          <li>Adobe XD</li>
-          <li>Photoshop</li>
-          <li>Illustrator</li>
-          <li>HTML/CSS</li>
-          <li>Javascript</li>
-          <li>InVision</li>
-          <li>Marvel</li>
-          <li>Principle</li>
-        </ul>
-
-</div>
-
-<!--Footer-BLACK-->
-<footer id="contact">
-<div class="container">
-<h2>Let's connect!</h2>
-
-  <a href="https://www.linkedin.com/in/cheriannrenee/"
-    target="_blank"><img src="img/linkedin-icon.png" alt="LinkedIn" class="icon"></a>
-
-    <a href="https://www.instagram.com/cheriannrenee/"
-    target="_blank"><img src="img/instagram-icon.png" alt="Instagram" class="icon"></a>
-
-    <a href="https://outlook.office365.com/mail/deeplink/compose/?mailtouri=mailto%3acheriannrenee%40gmail.com"
-    target="_blank"><img src="img/mail-icon.png" alt="E-mail" class="icon"></a>
-
-    <p><div class="airplane"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" data-name="Layer 3"><polygon fill="none" stroke="#101010" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" points="13.42 20.48 18.67 24.33 28.21 7.93 3.79 13.53 9.68 17.8 9.68 23.77 13.42 20.48"/><line x1="9.53" x2="27.75" y1="17.87" y2="8.38" fill="none" stroke="#101010" stroke-linecap="round" stroke-linejoin="round"/><line x1="12.22" x2="27.75" y1="19.39" y2="8.38" fill="none" stroke="#101010" stroke-linecap="round" stroke-linejoin="round"/><polygon fill="#101010" points="14.05 19.7 9.59 23.92 10.21 16.95 14.05 19.7"/></svg></div>
-
-      <p>© 2022 CHERI-ANN RENEE. All rights reserved.</p>
-    </div>
-  </footer>
-
-<script src="https://code.jquery.com/jquery-3.6.1.min" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-<script src="js/scripts.js"></script>
-
-</body>
+	</footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+  </body>
 </html>

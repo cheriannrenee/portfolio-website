@@ -1,18 +1,19 @@
-/*
-Colors used:
-Primary Color (Black): #101010;
-Secondary Color (Blue): 3734DB;
-*/
+/*-------------------------------------------Start Section---------------------------------------------*/
 
+/*setting the default width of an element to include the padding and the border via the box-sizing property and border-box value*/
 * {
   box-sizing: border-box;
 }
 
+/*--------------------------------------------End Section---------------------------------------------*/
+/*-------------------------------------------Start Section---------------------------------------------*/
+/*default body settings*/
+
 body {
   background-color: #ffffff;
   font-family: 'Proxima Nova', sans-serif;
-  font-size: 18px;
-  font-weight: 500;
+  font-size: 18px; /* Sets the font size to 16px */
+  font-weight: 500; /* Sets the font weight to 300 */
   line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
   color: #101010;
 }
@@ -26,6 +27,8 @@ h1 {
   font-weight: 700;
 }
 
+
+
 h2 {
   font-size: 1.75em;
   font-weight: 700;
@@ -34,111 +37,187 @@ h2 {
 h3 {
   font-size: 1.25em;
   font-weight: 500;
+  margin-top: -8px;
   text-align: center;
 }
+
 h4 {
   font-size: 0.15em;
   font-weight: 500;
 }
 
+
+/*setting images to full-width*/
 img {
   width: 100%;
-  max-width: 100%;
-  height: auto;
 }
 
+/*change the default link color to your primary color (copied from your comments at the top of the document)*/
 a {
   color: #3734DB;
   text-decoration: none; /* No underlining */
 }
-
-a:visited { /* visited link */
+a:hover {
   color: #3734DB;
+  text-decoration: none; /* Underlining when hovering over a link */
 }
 
-a:hover {
-  color: #101010;
-  text-decoration: underline; /* Underlining when hovering over a link */
+/*style the current nav item green*/
+.active a {
+    color: #808080;
 }
 
 a:active { /* selected link */
   color: #808080;
 }
 
+/*Pseudo classes for Accessibility for Across the Web*/
+a:hover,
+a:focus {
+  color: #101010;
+  text-decoration: underline;
+}
+
+
+/*CSS code for the button class*/
 .button {
   display: inline-block;
-  background-color: #ff7f50;
+  background-color: #3734DB;
   color: white;
   font-weight: 500;
   text-decoration: none;
   padding: 10px;
   border-radius: 10px;
   transition: 0.2s opacity;
-
-}
-
-.button:visited {
-  display: inline-block;
-  background-color: #3734DB;
-  color: #ffffff;
 }
 
 .button:hover {
   opacity: 0.8;
 }
 
+.button:active {
+  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+}
+
+/*
+.button:visited {
+  display: inline-block;
+  background-color: #3734DB;
+  color: #ffffff;
+}
+*/
+
+
+/*button rules for the mailto button*/
 .button.contact {
   background-color: #3734DB;
   color: #ffffff;
   text-transform: none;
-  border: 0px solid #808080;
+  border: 2px solid #808080;
+  transition: 0.8s opacity;
 }
 
+/*button class hover and active state*/
+
 .button.contact:hover {
-  background-color: #ffffff;
-  color: #101010;
+  opacity: 0.8;
+  background-color: #101010;
+  color: #ffffff;
 }
+
+/*
+.button.contact:active {
+  opacity: 0.8;
+  background-color: green;
+  color: #ffffff;
+}
+*/
 
 .icon {
   max-width: 25px;
 }
 
-/* ==============================End Section================================= */
-/* ==============================Start Section================================= */
+/*--------------------------------------------End Section---------------------------------------------*/
+/*-------------------------------------------Start Section---------------------------------------------*/
+/*stye the page sections*/
 
+/*style the <header> element*/
 header {
   background-color: #ffffff;
   text-transform: uppercase;
+  padding: 10px 0;
   text-align: center;
+  position: relative;
+  box-shadow: 0px 7px 5px 0px rgba(50, 50, 50, 0.75);
+}
+
+/*style the logo*/
+header .logo {
+  max-width: 100px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/*Navigation Styling*/
+/*
+nav {
+  display: inline-block;
+}
+*/
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4a4a4a;
+}
+
+nav {
+  width: auto;
+  float: right;
+}
+
+/*for the hamburger menu*/
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+}
+
+.navtoggle li:not(:last-child) {
+    display: none;
+  }
+
+.navtoggle, .navtoggle.responsive {
   position: relative;
 }
 
-header .logo {
-  max-width: 100px;
+.navtoggle.responsive li  {
+  display: block;
 }
 
-selector {
-  position: fixed;
+.navtoggle.responsive nav {
+  background-color: #f2f2f2;
+  margin-top: 25px;
+  margin-bottom: -51%;
 }
 
-.container {
-  padding: 0 35px;
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,127,80,0.5);
 }
 
-#work .row { padding-bottom: 25px; border-bottom: 3px solid #101010; }
-
-.row {
-  margin: 35px 0; /* 25px top and bottom, 0 left and right */
-}
-
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-main {
-  padding-top: 56px;
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
 }
 
 #hero {
@@ -147,67 +226,32 @@ main {
   width: 100%;
 }
 
-#hero h1 {
-  text-align: center; /* Centers text */
-  margin: 0;
-  padding: 0.67em 0;
-}
-
 #hero span {
   display: block;
 }
 
-.center {
-  text-align: center;
+#contact {
+    background-color: #f2f2f2;
+    padding: 20px;
 }
 
-nav > ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
 
-nav > ul > li {
-  display: inline-block;
-}
-
-nav > ul > li > a {
-  padding: 0 15px;
-  font-weight: 500;
-}
+/*--------------------------------------------End Section---------------------------------------------*/
+/*-------------------------------------------Start Section---------------------------------------------*/
+/* Layout styling */
 
 .container {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+  padding: 0 15px;
 }
 
-.navtoggle li:not(:last-child) {
-  display: inline-block;
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
 }
 
-.navtoggle li:last-child {
-  display: none;
-}
+#work .row { padding-bottom: 20px; }
 
-.navtoggle, .navtoggle.responsive {
-  position: relative;
-}
-
-.navtoggle li .icon {
-  position: absolute;
-  right: 0;
-  top: 2px;
-  font-size: 20px;
-  padding-right: 0;
-}
-
-.navtoggle.responsive li  {
-  display: block;
-}
-
-/* ==============================End Section================================= */
-/* ==============================Start Section================================= */
+/*--------------------------------------------End Section---------------------------------------------*/
+/*-------------------------------------------Start Section---------------------------------------------*/
 /*SVG animation*/
 /.svg-animation {
   width: 100%;
@@ -228,38 +272,90 @@ nav > ul > li > a {
   animation-timing-function: linear;
 }
 
-/* ==============================End Section================================= */
-/* ==============================Start Section================================= */
+/*--------------------------------------------End Section---------------------------------------------*/
+/*-------------------------------------------Start Section---------------------------------------------*/
 /*Media Queries*/
 
-/* ==============================Medium devices (640px and larger)================================= */
+/*clear page flow*/
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/*float all columns left*/
+[class*="col-"] {
+  padding: 10px;
+}
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
 @media only screen and (min-width: 640px) {
+  body {
+    font-size: 18px;
+  }
+
   header {
     text-align: unset;
-     padding: 20px 0 13px;
-   }
+    padding: 20px 0 13px;
+  }
 
-   nav {
-     width: auto;
-     float: right;
-     margin-top: 4px;
+  header .logo {
+    max-width: 100px;
+  }
+
+  nav > ul > li {
+    display: inline-block;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
   }
 
   .col-md-6 {
-  width: 50%;
+    width: 50%;
+    float: left;
+    padding-bottom: 40px;
+  }
+
 }
 
-[class*="col-"] {
-  float: left;
-}
-}
 
-/* ==============================Large devices (1024px or larger)================================= */
+/* ==============================
+Large devices (1024px or larger)
+================================= */
 @media only screen and (min-width: 1024px) {
-}
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .col-lg-7 {
+    width: 60%;
+  }
 
-/* ==============================X-large devices (1440px or larger)================================= */
-@media only screen and (min-width: 1440px) {
+  .col-lg-5 {
+    width: 40%;
+  }
+
+  .col-lg-7 {
+    width: 60%;
+    float: left;
+    padding-bottom: 40px;
+  }
+  .col-lg-8 {
+    width: 40%;
+    float: right;
+  }
+
+   #about-page .col-md-6 {
+     width: 100%;
+  }
 }
 
 /* =============================Gradient background================================= */
